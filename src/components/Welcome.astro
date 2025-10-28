@@ -2,6 +2,53 @@
 
 ---
 
-<div id="container">
-	
+<div class="container mt-4">
+    <h1 class="">SplideJS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates laborum maiores?</p>
+    <div class="splide p-2">
+        <div class="splide__slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide border rounded-2xl m-2"><img src="../../src/assets/images/aneirin_tn.svg" alt="aneirin"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/celestia-dristi_tn.svg" alt="dristi"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/charmaine_tn.svg" alt="charmaine"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/emmyloo-em_tn.svg" alt="em"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/gill_tn.svg" alt="gill"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/laverne_tn.svg" alt="laverne"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/mindigo_tn.svg" alt="mindigo"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/nalda_tn.svg" alt="nalda"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/narf_tn.svg" alt="narf"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/portman_tn.svg" alt="portman"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/seymour_tn.svg" alt="seymour"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/tomolor_tn.svg" alt="tomolor"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/trisaphron_tn.svg" alt="trisaphron"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/two_tn.svg" alt="two"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/violette_tn.svg" alt="violette"></li>
+                    <li class="splide__slide border rounded-2xl"><img src="../../src/assets/images/ichabod_tn.svg" alt="ichabod"></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
 </div>
+
+<script type="module">
+	const splide = new Splide('.splide', {
+  type: 'slide', //slide, loop, fade
+  // padding: { y: 10 }, //css values
+  gap: '0px', //1 rem default
+  rewind: true,
+  speed: 500, //transition in milliseconds
+  // fixedWidth: '10vw',
+  // width: '100vw',
+  perPage: 3,
+  start: 1,
+  perMove: 1,
+  autoplay: true,
+  interval: 3000,
+  arrows: true,
+  pagination: true,
+  pauseOnHover: true,
+  wheel: true,
+});
+splide.mount();
+</script>
